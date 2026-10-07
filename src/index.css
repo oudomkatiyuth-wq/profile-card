@@ -34,23 +34,16 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  
 
 }
 
-
-.html {
-  background: purple;
+.skill{
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 16px;
+  /* margin: 5px; */
 }
-
-.php {
-  background: red;
-
-}
-
-.js {
-  background: blue;
-}
-
 .card button {
   width: 100%;
   padding: 10px;
@@ -59,4 +52,5 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  margin-top: 5px;
 }

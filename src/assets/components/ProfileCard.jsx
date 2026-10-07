@@ -1,21 +1,30 @@
-
-function ProfileCard({ name, image}) {
+function ProfileCard( ) {
+  const skills =[
+    {id:1,name:"Html",color:"red"},
+    {id:1,name:"Php",color:"blue"},
+    {id:1,name:"javascrip",color:"green"},
+  ]
+ 
   return (
     <div className="card">
+      <img src="/profile.jpg" alt="" />
+      
+      <h1>Anissa W. Glenn</h1>
 
-      <img src={image} 
-      alt={name} 
-      />
+      <div className="abc">
+   
+          {
+            skills.map((s)=>(<span 
+              key={s.id} 
+              className="skill"
+              style={{backgroundColor:s.color}}>{s.name}</span>))
+         
+          }
+    
+      </div>
 
-      <h1>{name}</h1>
-<div className="abc">
-  
-  <p className="html">HTML & CSS</p>
-  <p className="php">PHP</p>
-  <p className="js">JavaScript</p>
-</div>
-
-  <button>Hire me!</button>
-</div>
-); }
+      <button>Hire me!</button>
+    </div>
+  );
+}
 export default ProfileCard;
